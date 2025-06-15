@@ -1,7 +1,7 @@
 <?php
-
 namespace system\router;
 
+ include ('../config.php');
 
 use ReflectionMethod;
 
@@ -10,15 +10,16 @@ class routing
     private $currentRoute;
     public function __construct()
     {
-        global $currentRoute;
+         global $currentRoute;
         $this->currentRoute = explode('/', $currentRoute);
-    }
+      }
+
     public function run()
     {
-        $path = realpath(dirname(__FILE__) . "/../../application/controllers/" . $this->currentRoute[0] . "php");
-        if (!file_exists($path)) {
-            echo "404 - file not exists";
-            exit;
+          $path = realpath(dirname(__FILE__) . "/../../application/controllers/" .$this->currentRoute[0] . ".php");
+         if (!file_exists($path)) {
+            echo "404 file not exists";
+             exit;
         }
         require_once($path);
         sizeof($this->currentRoute) == 1 ? $method = "index" : $method = $this->currentRoute[1];
@@ -36,4 +37,5 @@ class routing
             echo "404 method not exists";
         }
     }
+    
 }
