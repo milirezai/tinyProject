@@ -2,6 +2,6 @@
 require ('system/config.php');
 include ('system/router/routing.php');
 
- $test= new \system\router\routing();
+ $test= new \System\Router\routing();
  $test->run();
  

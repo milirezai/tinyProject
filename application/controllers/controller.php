@@ -1,8 +1,8 @@
 <?php
  namespace application\controllers;
 
-use system\traits\redirect;
+use System\Traits\redirect;
 
  class controller{
-   use redirect;
-  }
+  use redirect;
+   }

@@ -1,5 +1,5 @@
 <?php
-namespace system\router;
+namespace System\Router;
 
  include ('../config.php');
 
@@ -16,14 +16,14 @@ class routing
 
     public function run()
     {
-          $path = realpath(dirname(__FILE__) . "/../../application/controllers/" .$this->currentRoute[0] . ".php");
+          $path = realpath(dirname(__FILE__) . "/../../application/controllers/".$this->currentRoute[0]  . ".php");
          if (!file_exists($path)) {
             echo "404 file not exists";
              exit;
         }
         require_once($path);
         sizeof($this->currentRoute) == 1 ? $method = "index" : $method = $this->currentRoute[1];
-        $class = "application\controllers\\" . $this->currentRoute[0];
+        $class = "Application\Controllers\\" . $this->currentRoute[0];
         $object = new $class();
         if (method_exists($object, $method)) {
             $reflection = new ReflectionMethod($class, $method);
