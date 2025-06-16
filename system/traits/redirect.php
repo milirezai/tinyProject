@@ -8,6 +8,7 @@ trait redirect
         $protocol=stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://' ;
         header("location:".$protocol.$_SERVER['HTTP_HOST']."/tinyProject/".$url);
     }
+    
     protected function back()
     {
         $httpReferer= isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] :null;
