@@ -1,10 +1,13 @@
 <?php
 namespace Application\Controllers;
 
-class home
+use Application\Controllers\controller;
+
+class home extends controller
 {
     public function index(){
-        echo "this is a class";
+        $product= "لیست تمام محصولات";
+        $this->view('app.index',compact('product'));
     }
     public function create(){
         echo "this is a create method";
