@@ -1,4 +1,4 @@
-<?php include_once("../header/header.php");  ?>
+<?php $this->include("app.layouts.header.header");  ?>
  
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -41,4 +41,4 @@
         </section>
     </section>
 
-<?php include_once("../footer/footer.php");  ?>
+    <?php $this->include("app.layouts.footer.footer");  ?>

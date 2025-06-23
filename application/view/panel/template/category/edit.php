@@ -1,4 +1,4 @@
-<?php include_once("../header/header.php");  ?>
+<?php $this->include("panel.layouts.header.header");  ?>
 
                <form>
                     <section class="form-group">
@@ -12,7 +12,4 @@
                     <button type="submit" class="btn btn-primary">Update</button>
                 </form>
 
-            </section>
-        </section>
-    </section>
-    <?php include_once("../footer/footer.php");  ?>
+                <?php $this->include("panel.layouts.footer.footer");  ?>

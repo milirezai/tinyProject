@@ -1,4 +1,4 @@
-<?php include_once("../header/header.php");  ?>
+<?php $this->include("panel.layouts.header.header");  ?>
                 <form>
                     <section class="form-group">
                         <label for="name">Name</label>
@@ -11,8 +11,5 @@
                     <button type="submit" class="btn btn-primary">Create</button>
                 </form>
 
-            </section>
-        </section>
-    </section>
-
-<?php include_once("../footer/footer.php");  ?>
+ 
+                <?php $this->include("panel.layouts.footer.footer");  ?>

@@ -1,4 +1,4 @@
-<?php include_once("../header/header.php");  ?>
+<?php $this->include("panel.layouts.header.header");  ?>
 <form>
                     <section class="form-group">
                         <label for="title">Title</label>
@@ -15,10 +15,7 @@
                         <label for="body">Body</label>
                         <textarea class="form-control" id="body" rows="5" placeholder="body ..."></textarea>
                     </section>
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
                 </form>
 
-            </section>
-        </section>
-    </section>
-<?php include_once("../footer/footer.php");  ?>
+                <?php $this->include("panel.layouts.footer.footer");  ?>

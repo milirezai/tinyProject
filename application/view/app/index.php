@@ -1,5 +1,5 @@
- <?php include_once("header/header.php");  ?>
-     <section class="container my-5">
+<?php $this->include("app.layouts.header.header");  ?>
+<section class="container my-5">
         <!-- Example row of columns -->
         <section class="row">
             <section class="col-md-4">
@@ -35,4 +35,4 @@
         </section>
     </section>
 
-  <?php include_once("footer/footer.php");  ?>
+    <?php $this->include("app.layouts.footer.footer");  ?>
