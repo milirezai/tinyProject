@@ -10,7 +10,7 @@
 <body>
 <section id="app">
     <nav class="navbar navbar-expand-lg navbar-dark  bg-red">
-        <a class="navbar-brand" href="index.html">MVC tutorial panel</a>
+        <a class="navbar-brand" href="<?php $this->url("Home"); ?>">MVC tutorial panel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,10 +20,10 @@
             <section class="col-md-2 p-0">
                 <section class="sidebar">
                     <section class="sidebar-link">
-                        <a href="<?php $this->url("Artiicle"); ?>">panel</a>
+                        <a href="<?php $this->url("Panell"); ?>">panel</a>
                     </section>
                     <section class="sidebar-link">
-                        <a href="#">category</a>
+                        <a href="<?php $this->url("Categoory"); ?>">category</a>
                     </section>
                     <section class="sidebar-link">
                         <a href="<?php $this->url("Artiicle"); ?>">article</a>

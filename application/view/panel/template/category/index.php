@@ -1,7 +1,7 @@
 <?php $this->include("panel.layouts.header.header");  ?>
 <section class="mb-2 d-flex justify-content-between align-items-center">
-                    <h2 class="h4">Categories</h2>
-                    <a href="create.php" class="btn btn-sm btn-success">Create</a>
+                     <h2 class="h4">Categories</h2>
+                    <a href="<?php $this->url("Categoory/create"); ?>" class="btn btn-sm btn-success">Create</a>
                 </section>
 
                 <section class="table-responsive">
@@ -15,25 +15,18 @@
                             </tr>
                         </thead>
                         <tbody>
+                        <?php foreach($categories as $category) {  ?>
                             <tr>
-                                <td>1</td>
-                                <td>Sport</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                <td><?= $category['id'] ?></td>
+                                <td><?= $category['name'] ?></td>
+                                <td><?=  substr($category['description'],0,40)."..." ?></td>
                                 <td>
-                                    <a href="edit.php" class="btn btn-info btn-sm">Edit</a>
-                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                                    <a href="<?php $this->url("Categoory/edit/".$category['id']); ?>" class="btn btn-info btn-sm">Edit</a>
+                                    <a href="<?php $this->url("Categoory/destroy/".$category['id']); ?>" class="btn btn-danger btn-sm">Delete</a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>News</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                                <td>
-                                    <a href="edit.php" class="btn btn-info btn-sm">Edit</a>
-                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                </td>
-                            </tr>
-                        </tbody>
+                            <?php } ?>
+                         </tbody>
                     </table>
                 </section>
 

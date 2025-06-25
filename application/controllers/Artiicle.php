@@ -40,7 +40,7 @@ class Artiicle extends Controller
     {
         $article=new articleModel();
         $article->update($id,$_POST);
-        return $this->redirect('article');  
+        return $this->redirect('Artiicle');  
     }
     public function destroy($id)
     {

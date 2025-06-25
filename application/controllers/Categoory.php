@@ -8,10 +8,11 @@ class Categoory extends Controller
 {
     public function index()
     {
-        $category= new Category();
+        $category=new Category();
         $categories= $category->all();
         return $this->view('panel.template.category.index',compact('categories'));
     }
+
     public function create()
     {
         return $this->view('panel.template.category.create');

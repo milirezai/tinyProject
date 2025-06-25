@@ -18,13 +18,13 @@
                         <tbody>
                             <?php foreach ($articles as $article) { ?>
                          <tr>
-                            <td><?= article['id'] ?></td>
-                            <td><?= article['title'] ?></td>
-                            <td><?= article['cat_id'] ?></td>
-                            <td><?= substr(article['body'],0,40)."..." ?></td>
+                            <td><?= $article['id'] ?></td>
+                            <td><?= substr($article['title'],0,40)."..." ?></td>
+                            <td><?= $article['cat_id'] ?></td>
+                            <td><?= substr($article['body'],0,40)."..." ?></td>
                             <td>
-                                <a href="<?php $this->url("Artiicle/edit/".article['id']); ?>" class="btn btn-info btn-sm">Edit</a>
-                                <a href="<?php $this->url("Artiicle/destroy/".article['id']); ?>" class="btn btn-danger btn-sm">Delete</a>
+                                <a href="<?php $this->url("Artiicle/edit/".$article['id']); ?>" class="btn btn-info btn-sm">Edit</a>
+                                <a href="<?php $this->url("Artiicle/destroy/".$article['id']); ?>" class="btn btn-danger btn-sm">Delete</a>
                             </td>
                         </tr>
                         <?php  } ?>
