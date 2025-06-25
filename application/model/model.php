@@ -4,7 +4,7 @@ namespace Application\Model;
 use Pdo;
 use PDOException;
 
-class model
+class Model
 {
     protected $connection;
     public function __construct()

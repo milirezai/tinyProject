@@ -1,7 +1,7 @@
 <?php
 namespace System\Bootstrap;
 
-class autoload
+class Autoload
 {
     public function autoloader()
     {

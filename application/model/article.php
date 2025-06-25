@@ -1,7 +1,7 @@
 <?php
 namespace Application\Model;
 
-class article extends model
+class Article extends Model
 {
     public function all()
     {

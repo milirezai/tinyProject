@@ -1,7 +1,7 @@
 <?php
 namespace Application\Model;
 
-class category extends model
+class Category extends Model
 {
     public function all()
     {

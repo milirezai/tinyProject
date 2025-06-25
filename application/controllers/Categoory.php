@@ -1,8 +1,10 @@
 <?php
- namespace Application\Controllers;
+namespace Application\Controllers;
 
- class category extends Controllers
- {
+use Application\Controllers\Controller;
+
+class Categoory extends Controller
+{
     public function index()
     {
     }
@@ -24,4 +26,4 @@
     public function destroy($id)
     {
     }
- }
+}

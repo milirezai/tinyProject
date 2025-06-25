@@ -1,9 +1,9 @@
 <?php
  namespace Application\Controllers;
 
-use System\Traits\redirect;
-use System\Traits\view;
+use System\Traits\Redirect;
+use System\Traits\View;
 
- class controller{
-  use redirect,view;
+ class Controller{
+  use Redirect,View;
    }

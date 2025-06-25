@@ -1,9 +1,9 @@
 <?php
 namespace Application\Controllers;
 
-use Application\Controllers\controller;
+use Application\Controllers\Controller;
 
-class home extends controller
+class Home extends Controller
 {
     public function index()
     {
@@ -11,6 +11,7 @@ class home extends controller
 
     public function category($id)
     {
+        echo "category";
     }
     
     public function show($id)

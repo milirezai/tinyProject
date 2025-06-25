@@ -1,7 +1,7 @@
 <?php
 namespace System\Traits;
 
-trait redirect
+trait Redirect
 {
     protected function redirect($url)
     {

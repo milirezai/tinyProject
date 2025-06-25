@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mvc panel</title>
-    <link rel="stylesheet" href="/tinyproject/public/css/bootstrap/bootstrap.min.css" media="all" type="text/css">
-    <link rel="stylesheet" href="/tinyproject/public/css/style.css" media="all" type="text/css">
+    <link rel="stylesheet" href="<?php $this->asset("css/bootstrap.min.css"); ?>" media="all" type="text/css">
+    <link rel="stylesheet" href="<?php $this->asset("css/style.css"); ?>" media="all" type="text/css">
 </head>
 <body>
 <section id="app">
@@ -20,13 +20,13 @@
             <section class="col-md-2 p-0">
                 <section class="sidebar">
                     <section class="sidebar-link">
-                        <a href="/tinyproject/panel/index.php">panel</a>
+                        <a href="<?php $this->url("Artiicle"); ?>">panel</a>
                     </section>
                     <section class="sidebar-link">
-                        <a href="/tinyproject/panel/category/index.php">category</a>
+                        <a href="#">category</a>
                     </section>
                     <section class="sidebar-link">
-                        <a href="/tinyproject/panel/article/index.php">article</a>
+                        <a href="<?php $this->url("Artiicle"); ?>">article</a>
                     </section>
 
                 </section>

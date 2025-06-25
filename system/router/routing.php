@@ -5,7 +5,7 @@ namespace System\Router;
 
 use ReflectionMethod;
 
-class routing
+class Routing
 {
     private $currentRoute;
     public function __construct()

@@ -1,7 +1,7 @@
 <?php
 namespace System\Traits;
 
-trait view
+trait View
 {
     protected function view($dir , $vars = null){
 
