@@ -23,7 +23,7 @@ class Artiicle extends Controller
     {
         $article=new articleModel();
         $article->insert($_POST);
-        return $this->redirect('article');  
+        return $this->redirect('Artiicle');  
     }
     public function show($id)
     {
