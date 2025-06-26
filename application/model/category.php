@@ -13,7 +13,7 @@ class Category extends Model
     public function articles($cat_id)
     {
         $query= "SELECT * FROM `articles` WHERE `cat_id`=?";
-        $result= $this->query($query,[$cat_id])->fetch();
+        $result= $this->query($query,[$cat_id])->fetchall();
         $this->closeConnection();
         return $result;
     }

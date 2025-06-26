@@ -11,29 +11,22 @@
 <section id="app">
 
     <nav class="navbar navbar-expand-lg navbar-dark  bg-blue">
-        <a class="navbar-brand" href="/tinyproject/app/index.php">MVC tutorial</a>
+        <a class="navbar-brand" href="<?php $this->url("Panell")?>">MVC tutorial</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                    <a class="nav-link" href="<?php $this->url("Home")?>">خانه</a>
+                </li>
+            <?php foreach($categories as $category){  ?>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/tinyproject/app/index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php $this->url("Home/category/".$category['id']); ?>"><?= $category['name'] ?> </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/tinyproject/app/category/category.php">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/tinyproject/app/category/category.php">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/tinyproject/app/category/category.php">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/tinyproject/app/category/category.php">Link</a>
-                </li>
-            </ul>
+                <?php }?>
+             </ul>
         </div>
     </nav>
 
