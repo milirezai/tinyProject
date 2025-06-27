@@ -17,10 +17,4 @@
     </section>
 
     <?php $this->include("app.layouts.footer.footer");  ?>
-<!-- <?php
-foreach($categories as $category){
-if ($category['id']==$article['cat_id']) {
-    echo $category['name'];
-}
-}
- ?> -->
+ 
