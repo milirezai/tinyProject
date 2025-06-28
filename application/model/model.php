@@ -9,7 +9,7 @@ class Model
     protected $connection;
     public function __construct()
     {
-        if (!isset($connection)) {
+        if (!isset($this->connection)) {
             global  $dbName, $dbUserName, $dbPassword;
             try {
                 $this->connection=new PDO("mysql:dbname=$dbName;host=localhost",$dbUserName,$dbPassword);
